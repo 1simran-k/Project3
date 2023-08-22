@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./aproject.css">
+    <script src="https://kit.fontawesome.com/127d5d32f3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Food Recipe</title>
+</head>
+<body style="background-color: black;">
+    <nav class="navbar navbar-expand-md fixed-top" id="naving">
+        <a class="navbar-brand" href="#">
+            <img alt="image"src="./images/green-recipes-logo-for-sale-removebg-preview.png" ><span>FOOD RECIPES</span>
+          </a>
+        <button type="button" title="BUTTON" class="navbar-toggler" data-toggle="collapse" data-target= "#menu">
+                    <span class="navbar-toggler-icon"></span>       
+                </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="menu">
+                          <ul class="navbar-nav">
+                           <li> <a class="nav-link1" href="#home">HOME</a></li>
+                           <li> <a class="nav-link1" href="#about">ABOUT</a></li>
+                           <li> <a class="nav-link1" href="#signup">SIGN UP</a></li>
+                           <li> <a class="nav-link1" href="#Login">LOG IN</a></li>
+                           <li> <a class="nav-link1" href="#get-query">CONTACT</a></li>
+                          </ul>
+                          <span id="mydata"></span>
+                </div>
+                  </nav>
+
+    <div id="home" class="container-one">
+      <div class="div-one">
+      <h1 style="text-align: center;margin-top:10%;">GOOD FOOD <br>&nbsp;GOOD MOOD</h1>
+      <br>
+      <p>Explore our carefully crafted menu, designed to take you on a delectable voyage through global cuisines. Our commitment to quality means that every dish is prepared with the freshest ingredients, ensuring that each bite is a burst of flavor.
+
+      </p>
+      </div>
+         <form action=" " class="search-bar">
+        <input id="search-text" placeholder="search..." type="text" autocomplete="off" />
+        
+        <i id="search-btn" class="fa-solid fa-magnifying-glass fa-3x"></i>
+        </form>
+    </div>
+
+    <div id="my-div">
+     <h1> WAIT FOR RESULTS...</h1>
+    </div>
+
+    <div id="about" class="aboutus">
+      <div class="about-heading">
+         <h1>WHO WE ARE</h1>
+         <p>Food Recipes is here to help you cook delicious meals with less stress and more joy. We offer recipes and cooking advice for home cooks, by home cooks.
+          < Helping create “kitchen wins” is what we’re all about.
+              <br/>
+              <br/>
+          Food Recipes act as a home cooking blog to record favorite family recipes. Today, Food Recipes has grown into a trusted resource for home cooks with more than 3,000 tested recipes, guides, and meal plans, drawing over 15 million readers each month from around the world. We’re supported by a diverse group of recipe developers, food writers.</p>
+      </div>
+    </div>
+    <div class="contact" id="signup">
+            <form class="contactus">
+              <h1> Sign up </h1>  
+              <div class="field input-field">
+                <input class="input" title="Name" placeholder="Full Name" type="text" id="name-sign">
+              </div>    
+                  <div class="field input-field">
+                    <input class="input" placeholder="Email" type="email" id="email-sign">
+                  </div>
+                  <div class="field input-field">
+                    <input class="input" title="Email" placeholder="Password" type="password" id="pass">
+                  </div>
+                 
+                  <div class="field button-field">
+                    <button type="submit" id="btn">Sign up</button>
+                  </div>
+                  <div class="form-link">
+                <span>Already have an account? </span>    <a href="#" class="sign-up link">Log in</a>
+                  </div>
+          </form>
+    </div>
+    <div class="contact" id="Login">
+      <form class="contactus">
+        <h1> Login </h1>  
+           
+            <div class="field input-field">
+              <input class="input" title="Email" placeholder="Email" type="email" id="email-login">
+            </div>
+            <div class="field input-field">
+              <input class="input" title="Email" placeholder="Password" type="password" id="pass-login">
+            </div>
+            <div class="form-link">
+              <a href="#" id="forget-password" class="forgot-pass">Forgot Password?</a>
+            </div>
+            <div class="field button-field">
+              <button type="submit" id="login-btn">Log in</button>
+            </div>
+            <div class="form-link">
+          <span>Already have an account? </span>    <a href="#" class="sign-up link">Log in</a>
+            </div>
+    </form>
+</div>
+    <div class="query" id="get-query">
+      <div class="query-div">
+      <div class="query-h">
+      <h1>Contact Us</h1>
+    <p>We're here to answer any questions you may have. Fill out the form below and we'll get back to you as soon as possible.</p>
+    </div>
+    <br>
+    <form action="" class="query-form">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter name....">
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter email....">
+      </div>
+      <div>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required placeholder="Enter subject...">
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Enter your message......"></textarea>
+      </div>
+      
+        <input type="submit" value="Submit" class="query-submit">   
+    </form>
+    </div>
+    </div>
+
+    <div  id="contact"  class="last-icons">
+      <div class="facebook">
+          <i class="fa-brands fa-facebook"></i>
+      </div>
+      <div class="twitter">
+          <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="youtube">
+          <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <div class="instagram">
+          <i class="fa-brands fa-square-instagram"></i>
+      </div>
+      <div class="whatsapp">
+          <i class="fa-brands fa-square-whatsapp"></i>
+      </div>
+  </div> 
+  
+  <div class="grid"> 
+      <div class="row">
+              <h1>Menu</h1>
+              <span>HOME</span> <br><br>
+              <span>ABOUT ME</span><br><br>
+              <span>LINKS</span><br><br>
+              <span>SKILLS</span> <br><br>
+              <span>CONTACT</span> <br>
+      </div>
+      <div class="row">
+                      <h1>Contact me</h1>
+                      <span> <i class="fas fa-home mr-3"></i>RAYAT-BAHRA UNIVERSITY
+                                  Chandigarh-Ropar NH 205,
+                                  Greater Mohali, Punjab, INDIA - 140103 </span>
+                                  <br><br>
+                      <span>
+                              <i class="fa-solid fa-envelope"></i>
+                          simrankaur44006@gmail.com
+                      </span>
+                      <br><br>
+                      <span><i class="fas fa-phone mr-3"></i> +91 1234567889</span>
+                      <br><br>
+                      <span><i class="fa-brands fa-instagram"></i></i>  instagram.com</span>
+                      <br><br>
+                      <span><i class="fa-brands fa-facebook"></i> facebook </span>
+                      <br>
+                      
+   </div>
+      <div class="row">
+          <h1>Social</h1>
+          <span>Linked in</span><br><br>
+          <span>Facebook</span><br><br>
+          <span>Instagram</span><br><br>
+          <span>Youtube</span><br><br>
+          <span>Twitter</span><br><br>
+
+
+      </div>
+      
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./aproject.js"></script>
+  <script src="./signup.js"></script>
+  <script src="./login.js"></script>
+
+</body>
+</html>
